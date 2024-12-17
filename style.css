@@ -40,11 +40,24 @@ body {
     color: #fff;
 }
 
+.display.active .display-input {
+    font-size: 15px;
+    color: rgba(255, 255, 255, .3);
+    transform: translateY(-65%);
+    transition: .5s;
+}
+
 .display .display-result {
     position: absolute;
     left: 0;
     font-size: 15px;
     transform: translateY(65%);
+}
+
+.display.active .display-result {
+    font-size: 35px;
+    transform: translateY(0);
+    transition: .5s;
 }
 
 .buttons {
